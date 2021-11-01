@@ -5,9 +5,9 @@
 
 class iaMatrix {
 public:
-	int n;		// counts of inputs		
-	int m;		// counts of neurones
-
+	int n;	
+	int m;
+	
 	iaVector* vector;
 
 	iaMatrix();
