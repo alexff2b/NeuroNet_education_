@@ -4,14 +4,14 @@
 
 class iaVector {
 public:
-	int m;								// Count of inputs
-	double* value;						// Inputs (vector)
+	int m;
+	double* value;
 
-	iaVector();							//
-	iaVector(int m);					//
-	iaVector(int m, double values[]);	//
+	iaVector();
+	iaVector(int m);
+	iaVector(int m, double values[]);
 
-	~iaVector();						//
+	~iaVector();
 
 	double& operator [] (int j) { return value[j]; }
 
