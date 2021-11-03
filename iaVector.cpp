@@ -1,4 +1,4 @@
-﻿/* **************************************************************************************************** *
+/* **************************************************************************************************** *
  *	Company	: iA
  *	File	: iaVector.cpp
  *	Author	: Aleksandr IUSHKEVICH
@@ -30,12 +30,3 @@ iaVector::~iaVector() {}
 int iaVector::sizeOfVector() {
 	return m;
 }
-
-#ifdef DEBUG
-void iaVector::printVector() {
-	std::cout << "Address m : (" << & m << ")\tAddress value : (" << &value << ")" << std::endl;
-	for (int j = 0; j < m; j++)
-		std::cout << "(" << & value[j] << ") : \t" << value[j] << std::endl;
-	std::cout << std::endl;
-}
-#endif // DEBUG
