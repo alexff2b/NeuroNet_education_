@@ -1,4 +1,4 @@
-﻿/* **************************************************************************************************** *
+/* **************************************************************************************************** *
  *	Company	: iA
  *	File	: iaVector.h
  *	Author	: Aleksandr IUSHKEVICH
@@ -14,28 +14,22 @@
 
 #include <iostream>
 
-#define DEBUG
-
 class iaVector {
 public:
 	
-	iaVector();								// Default constructor
-	iaVector(int m);						// Constructor by size
+	iaVector();				// Default constructor
+	iaVector(int m);			// Constructor by size
 	iaVector(int m, const double values[]);	// Constructor with values
-	iaVector(iaVector& otherVector);		// Constructor of copy
+	iaVector(iaVector& otherVector);	// Constructor of copy
 
-	~iaVector();							// Destructor
+	~iaVector();				// Destructor
 
 	int sizeOfVector();
-
-#ifdef DEBUG
-	void printVector();						// Print all data of vector with addresses (used to debug)
-#endif // DEBUG
 
 	double& operator [] (int j) { return value[j]; }
 	double* operator & (int j) { return &value[j]; }
 	
 private:
-	int m;									// Count of inputs
-	double* value;							// Inputs (vector)
+	int m;					// Count of inputs
+	double* value;				// Inputs (vector)
 };
