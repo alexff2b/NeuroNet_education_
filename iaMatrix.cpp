@@ -41,3 +41,11 @@ iaMatrix::iaMatrix(iaMatrix& otherMatrix) : iaMatrix(otherMatrix.n, otherMatrix.
 }
 
 iaMatrix::~iaMatrix() { }
+
+int iaMatrix::numberOfVectors() {
+	return n;
+}
+
+int iaMatrix::sizeOfVectors() {
+	return m;
+}

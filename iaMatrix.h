@@ -20,13 +20,16 @@ public:
 
 	iaVector* vector;
 
-	iaMatrix();					// Default constructor
-	iaMatrix(int n);				// Constructor by one size (n * n)
-	iaMatrix(int n, int m);				// Constructor by two sizes (n * m)
+	iaMatrix();										// Default constructor
+	iaMatrix(int n);								// Constructor by one size (n * n)
+	iaMatrix(int n, int m);							// Constructor by two sizes (n * m)
 	iaMatrix(int n, int m, const double values[]);	// Constructor with values
-	iaMatrix(iaMatrix& otherMatrix);		// Constructor of copy
+	iaMatrix(iaMatrix& otherMatrix);				// Constructor of copy
 
-	~iaMatrix();					// Destructor
+	~iaMatrix();									// Destructor
+
+	int numberOfVectors();
+	int sizeOfVectors();
 
 	iaVector& operator [](int i) { return vector[i]; }
 	iaVector* operator & (int i) { return &vector[0]; }
