@@ -30,3 +30,10 @@ iaVector::~iaVector() {}
 int iaVector::sizeOfVector() {
 	return m;
 }
+
+void iaVector::printVector() {
+	std::cout << "Layer size : " << m << "\n" << "Address  - " << this << std::endl;
+	for (int j = 0; j < m; j++)
+		std::cout << "(" << &value[j] << ") : \t" << value[j] << std::endl;
+	std::cout << std::endl;
+}

@@ -49,3 +49,13 @@ int iaMatrix::numberOfVectors() {
 int iaMatrix::sizeOfVectors() {
 	return m;
 }
+
+void iaMatrix::printMatrix() {
+	std::cout << "Matrix : \nNumber of Vecros - " << n << "\nSize of Vectors - " << m << "\nAddress - " << this << std::endl;
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			std::cout << "(" << &vector[i][j] << ") : " << vector[i][j] << "\t";
+		}
+		std::cout << std::endl;
+	}
+}

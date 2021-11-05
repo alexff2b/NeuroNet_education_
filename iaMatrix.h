@@ -30,6 +30,7 @@ public:
 
 	int numberOfVectors();
 	int sizeOfVectors();
+	void printMatrix();
 
 	iaVector& operator [](int i) { return vector[i]; }
 	iaVector* operator & (int i) { return &vector[0]; }

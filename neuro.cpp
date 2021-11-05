@@ -22,29 +22,34 @@
 
 using namespace std;
 
-//void iaVectorTest();
-//void iaMatrixTest();
+void iaVectorTest();
+void iaMatrixTest();
 void iaNetworkTest();
 
 int main() {
     cout << "Hello World!\n";
 
+	// ----- XOR -----  Use Gauss
 	double matrix_X[4][2]{ { 0, 0 }, { 0, 1 }, { 1, 0 }, { 1, 1 } };
 	double matrix_Y[4][1]{ { 0.0 }, { 1.0 }, { 1.0 }, { 0.0 } };
 
 	iaMatrix X(4, 2, *matrix_X);
 	iaMatrix Y(4, 1, *matrix_Y);
 
-
-	int numberL = 3;
 	int sizes[]{ 2, 3, 1 };
-	iaNetwork network(numberL, sizes);
-	network.Train(X, Y, 0.5, 1e-7, 100000); // запускаем обучение сети 
+	int numberL = sizeof(sizes) / sizeof(sizes[0]);
 
+	iaNetwork network(numberL, sizes);
+
+	iaVector outputs(sizes[numberL - 1]);
+
+	network.Train(X, Y, 0.5, 1e-7, 10000); // запускаем обучение сети 
+
+	cout << "X1\tX2\tAnswer" << endl;
 	for (int i = 0; i < 4; i++) {
-		iaVector output;
-		output = network.ForwardPropogation(X[i]);
-		cout << "X: " << X[i][0] << " " << X[i][1] << ", Y : " << Y[i][0] << ", output : " << output[0] << endl;
+		iaVector outputs;
+		outputs = network.ForwardPropogation(X[i]);
+		cout << X[i][0] << "\t" << X[i][1] << "\toutput : " << outputs[0] << endl;
 	}
 
 
@@ -56,7 +61,7 @@ int main() {
 	//iaMatrixTest();
 
 	//  ---------- iaNetwork Test ----------
-	iaNetworkTest();
+	//iaNetworkTest();
 	
 
 	return 0;
@@ -73,6 +78,8 @@ void iaVectorTest() {
 	iaVector vector4;
 
 	int size = 0;
+
+	vector3.printVector();
 
 	vector1 = iaVector(15, v2);
 
@@ -104,6 +111,8 @@ void iaMatrixTest() {
 	iaMatrix matrix5(2, 3, *v1);
 	iaMatrix matrix6;
 
+	matrix5.printMatrix();
+
 	matrix1 = iaMatrix(3, 5, *v2);
 
 	for (int i = 0; i < 1; i++) {
@@ -116,14 +125,14 @@ void iaMatrixTest() {
 
 	matrix6 = iaMatrix(matrix5);
 
-	//matrix2 = iaMatrix(matrix1.n, matrix1.m);
+	matrix2 = iaMatrix(matrix1.numberOfVectors(), matrix1.sizeOfVectors());
 
-	/*for (int i = 0; i < matrix1.n; i++) {
-		matrix2[matrix1.n - i - 1] = iaVector(matrix1.m);
-		for (int j = 0; j < matrix1.m; j++) {
-			matrix2[matrix1.n - i - 1][matrix1.m - j - 1] = matrix1[i][j];
+	for (int i = 0; i < matrix1.numberOfVectors(); i++) {
+		matrix2[matrix1.numberOfVectors() - i - 1] = iaVector(matrix1.sizeOfVectors());
+		for (int j = 0; j < matrix1.sizeOfVectors(); j++) {
+			matrix2[matrix1.numberOfVectors() - i - 1][matrix1.sizeOfVectors() - j - 1] = matrix1[i][j];
 		}
-	}*/
+	}
 
 	matrix5 = matrix4;
 
