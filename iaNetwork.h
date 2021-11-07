@@ -9,15 +9,15 @@
 
 using namespace std;
 
-struct netSetings {
+struct netSettings {
 
-	netSetings();
-	netSetings(int n);
-	netSetings(int n, int s[]);
+	netSettings();
+	netSettings(int n);
+	netSettings(int n, int s[]);
 
 	int numberOfLayers;
 	int* sizes;
-	char* weightsFile;
+	//char* weightsFile;
 };
 
 class iaNetwork {
@@ -48,7 +48,7 @@ public:
 	iaNetwork();
 	iaNetwork(int layersCount);
 	iaNetwork(int layersCount, int sizes[]);
-	iaNetwork(netSetings setings);
+	iaNetwork(netSettings settings);
 
 	~iaNetwork();
 

@@ -1,16 +1,16 @@
 ﻿
 #include "iaNetwork.h"
 
-netSetings::netSetings() : netSetings(0) {
+netSettings::netSettings() : netSettings(0) {
 
 }
 
-netSetings::netSetings(int n) {
+netSettings::netSettings(int n) {
     this->numberOfLayers = n;
     this->sizes = (n != 0 ? new int[n]() : nullptr);
 }
 
-netSetings::netSetings(int n, int s[]) : netSetings(n) {
+netSettings::netSettings(int n, int s[]) : netSettings(n) {
     for (int j = 0; j < this->numberOfLayers; j++) {
         this->sizes[j] = s[j];
     }
@@ -53,7 +53,7 @@ iaNetwork::iaNetwork(int layersCount, int sizes[]) : iaNetwork(layersCount) {   
     }
 }
 
-iaNetwork::iaNetwork(netSetings setings) : iaNetwork(setings.numberOfLayers, setings.sizes) {
+iaNetwork::iaNetwork(netSettings settings) : iaNetwork(settings.numberOfLayers, settings.sizes) {
 
 }
 
@@ -166,7 +166,7 @@ void iaNetwork::Train(iaMatrix X, iaMatrix Y, double alpha, double eps, int epoc
 
 void iaNetwork::SaveError(int epoch, double error) {
     ofstream fError;
-    fError.open("setings/errors.txt");              // Open file to save errors in
+    fError.open("settings/errors.txt");              // Open file to save errors in
     if (fError.is_open()) {                         // If file is open:
         fError << epoch << "\t" << error << endl;   // Save nunber of epoch and error for this epoch 
     }
@@ -175,7 +175,7 @@ void iaNetwork::SaveError(int epoch, double error) {
 
 void iaNetwork::SaveWeights() {
     ofstream fWeights;
-    fWeights.open("setings/weights.txt");                                       // Open file to save weights in
+    fWeights.open("settings/weights.txt");                                       // Open file to save weights in
     if (fWeights.is_open()) {                                                   // If file is open:
         for (int l = 0; l < this->layersNumber; l++) {                          // Layers
             for (int i = 0; i < this->weights[l].numberOfVectors(); i++) {      // Nets in layer [l]
@@ -191,7 +191,7 @@ void iaNetwork::SaveWeights() {
 
 void iaNetwork::LoadWeights() {
     ifstream fWeights;
-    fWeights.open("setings/weights.txt");                                       // Open file to load weights from
+    fWeights.open("settings/weights.txt");                                       // Open file to load weights from
     if (fWeights.is_open()) {                                                   // If file is open:
         for (int l = 0; l < this->layersNumber; l++) {                          // Layers
             for (int i = 0; i < this->weights[l].numberOfVectors(); i++) {      // Nets in layer [l]

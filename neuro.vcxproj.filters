@@ -19,13 +19,13 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="iaVector.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="iaMatrix.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Файлы ресурсов</Filter>
     </ClCompile>
     <ClCompile Include="iaNetwork.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Файлы ресурсов</Filter>
+    </ClCompile>
+    <ClCompile Include="iaMatrix.cpp">
+      <Filter>Файлы ресурсов</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

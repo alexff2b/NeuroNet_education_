@@ -27,22 +27,25 @@ using namespace std;
 int main() {
     cout << "Hello World!\n";
 
-	netSetings netwokrSetings;
-	ifstream fSetings;
+	netSettings netwokrSettings;
+	ifstream fSettings;
 	 
-	fSetings.open("setings/setings.txt");
-	if (fSetings.is_open()) {
+	fSettings.open("settings/settings.txt");
+	if (fSettings.is_open()) {
 		int n;
-		fSetings >> n;
+		fSettings >> n;
 		int* s = new int[n]();
 		cout << "Layers : " << n << endl;
 		for (int i = 0; i < n; i++) {
-			fSetings >> s[i];
+			fSettings >> s[i];
 			cout << "Neurons in layer " << i << " : " << s[i] << endl;
 		}
-		netwokrSetings = netSetings(n, s);
+		netwokrSettings = netSettings(n, s);
 	}
-	fSetings.close();
+	else {
+		return 1;
+	}
+	fSettings.close();
 	
 	// ----- XOR -----  Use Gauss
 	double matrix_X[16][4]{
@@ -84,10 +87,10 @@ int main() {
 	iaMatrix X(16, 4, *matrix_X);
 	iaMatrix Y(16, 1, *matrix_Y);
 
-	iaNetwork network(netwokrSetings);
+	iaNetwork network(netwokrSettings);
 	//network.loadWeights();
 
-	iaVector outputs(netwokrSetings.sizes[netwokrSetings.numberOfLayers - 1]);
+	iaVector outputs(netwokrSettings.sizes[netwokrSettings.numberOfLayers - 1]);
 
 	network.Train(X, Y, 0.5, 1e-6, 1000000);
 
