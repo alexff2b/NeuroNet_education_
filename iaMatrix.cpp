@@ -12,31 +12,31 @@
  * **************************************************************************************************** */
 #include "iaMatrix.h"
 
-iaMatrix::iaMatrix() : iaMatrix(0) { }
+iaMatrix::iaMatrix() : iaMatrix(0) { }	// Call constructor by one size with size 0
 
-iaMatrix::iaMatrix(int n) : iaMatrix(n, n) { }
+iaMatrix::iaMatrix(int n) : iaMatrix(n, n) { }	// Call constructor by two sizes with size n (square matrix)
 
 iaMatrix::iaMatrix(int n, int m) {
-	this->n = ((n == 0 && m > 0) ? 1 : n);					// set number of neurones
-	this->m = ((n > 0 && m == 0) ? 1 : m);					// set number of inputs in neuron
-	this->vector = (this->n != 0 ? new iaVector[this->n]() : nullptr);	// create vector of vectors
-	for (int i = 0; i < this->n; i++) {					//
-		this->vector[i] = iaVector(this->m);				//
+	this->n = ((n == 0 && m > 0) ? 1 : n);								// Set number of nets
+	this->m = ((n > 0 && m == 0) ? 1 : m);								// Set number of inputs in net
+	this->vector = (this->n != 0 ? new iaVector[this->n]() : nullptr);	// Create vector of vectors with size 0
+	for (int i = 0; i < this->n; i++) {									// Vectors:
+		this->vector[i] = iaVector(this->m);							// Recreate Vector [i] with size m
 	}
 }
 
-iaMatrix::iaMatrix(int n, int m, const double values[]) : iaMatrix(n, m) {
-	for (int i = 0; i < n; i++) {						//
-		for (int j = 0; j < m; j++) {					//
-			this->vector[i][j] = *values;				//
-			values++;						//
+iaMatrix::iaMatrix(int n, int m, const double values[]) : iaMatrix(n, m) {	// Call constructor by two sizes before with sizes n and m
+	for (int i = 0; i < n; i++) {			// Vectors:
+		for (int j = 0; j < m; j++) {		// Values if vector [i]:
+			this->vector[i][j] = *values;	// Save value [j] in vector [i]
+			values++;						// Incrise pointer for input values
 		}
 	}
 }
 
-iaMatrix::iaMatrix(iaMatrix& otherMatrix) : iaMatrix(otherMatrix.n, otherMatrix.m) {
-	for (int i = 0; i < this->n; i++) {
-		this->vector[i] = iaVector(otherMatrix.vector[i]);
+iaMatrix::iaMatrix(iaMatrix& otherMatrix) : iaMatrix(otherMatrix.n, otherMatrix.m) {	//  Call constructor by two sizes with sizes of other matrix
+	for (int i = 0; i < this->n; i++) {						// Vectors:
+		this->vector[i] = iaVector(otherMatrix.vector[i]);	// Create vector [i] as copy of vector [i] from other matrix
 	}
 }
 

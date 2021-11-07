@@ -1,2 +1,6 @@
-﻿  iaNetwork.cpp
+﻿  iaMatrix.cpp
+  iaNetwork.cpp
+  iaVector.cpp
+  neuro.cpp
+  Создание кода...
   neuro.vcxproj -> C:\Users\aleksandri\Documents\GitHub\NeuroNet_education_\x64\Debug\neuro.exe

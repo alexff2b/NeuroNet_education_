@@ -1,0 +1,115 @@
+.TH "iaMatrix" 3 "Сб 6 Ноя 2021" "Neuro Net" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+iaMatrix
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <iaMatrix\&.h>\fP
+.SS "Открытые члены"
+
+.in +1c
+.ti -1c
+.RI "\fBiaMatrix\fP ()"
+.br
+.ti -1c
+.RI "\fBiaMatrix\fP (int n)"
+.br
+.ti -1c
+.RI "\fBiaMatrix\fP (int n, int m)"
+.br
+.ti -1c
+.RI "\fBiaMatrix\fP (int n, int m, const double values[])"
+.br
+.ti -1c
+.RI "\fBiaMatrix\fP (\fBiaMatrix\fP &otherMatrix)"
+.br
+.ti -1c
+.RI "\fB~iaMatrix\fP ()"
+.br
+.ti -1c
+.RI "int \fBnumberOfVectors\fP ()"
+.br
+.ti -1c
+.RI "int \fBsizeOfVectors\fP ()"
+.br
+.ti -1c
+.RI "void \fBprintMatrix\fP ()"
+.br
+.ti -1c
+.RI "\fBiaVector\fP & \fBoperator[]\fP (int i)"
+.br
+.ti -1c
+.RI "\fBiaVector\fP * \fBoperator&\fP (int i)"
+.br
+.in -1c
+.SS "Открытые атрибуты"
+
+.in +1c
+.ti -1c
+.RI "\fBiaVector\fP * \fBvector\fP"
+.br
+.in -1c
+.SH "Подробное описание"
+.PP 
+См\&. определение в файле iaMatrix\&.h строка 18
+.SH "Конструктор(ы)"
+.PP 
+.SS "iaMatrix::iaMatrix ()"
+
+.PP
+См\&. определение в файле iaMatrix\&.cpp строка 15
+.SS "iaMatrix::iaMatrix (int n)"
+
+.PP
+См\&. определение в файле iaMatrix\&.cpp строка 17
+.SS "iaMatrix::iaMatrix (int n, int m)"
+
+.PP
+См\&. определение в файле iaMatrix\&.cpp строка 19
+.SS "iaMatrix::iaMatrix (int n, int m, const double values[])"
+
+.PP
+См\&. определение в файле iaMatrix\&.cpp строка 28
+.SS "iaMatrix::iaMatrix (\fBiaMatrix\fP & otherMatrix)"
+
+.PP
+См\&. определение в файле iaMatrix\&.cpp строка 37
+.SS "iaMatrix::~iaMatrix ()"
+
+.PP
+См\&. определение в файле iaMatrix\&.cpp строка 41
+.SH "Методы"
+.PP 
+.SS "int iaMatrix::numberOfVectors ()"
+
+.PP
+См\&. определение в файле iaMatrix\&.cpp строка 43
+.SS "\fBiaVector\fP* iaMatrix::operator& (int i)\fC [inline]\fP"
+
+.PP
+См\&. определение в файле iaMatrix\&.h строка 36
+.SS "\fBiaVector\fP& iaMatrix::operator[] (int i)\fC [inline]\fP"
+
+.PP
+См\&. определение в файле iaMatrix\&.h строка 35
+.SS "void iaMatrix::printMatrix ()"
+
+.PP
+См\&. определение в файле iaMatrix\&.cpp строка 51
+.SS "int iaMatrix::sizeOfVectors ()"
+
+.PP
+См\&. определение в файле iaMatrix\&.cpp строка 47
+.SH "Данные класса"
+.PP 
+.SS "\fBiaVector\fP* iaMatrix::vector"
+
+.PP
+См\&. определение в файле iaMatrix\&.h строка 21
+
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для Neuro Net из исходного текста\&.

@@ -26,7 +26,7 @@ public:
 
 	int sizeOfVector();						// Return size of vector
 
-	void printVector();
+	void printVector();						// Print vector
 
 	double& operator [] (int j) { return value[j]; }
 	double* operator & (int j) { return &value[j]; }

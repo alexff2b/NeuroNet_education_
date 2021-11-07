@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="ia_vector_8h" kind="file" language="C++">
+    <compoundname>iaVector.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includedby refid="ia_matrix_8h" local="yes">C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaMatrix.h</includedby>
+    <includedby refid="ia_network_8h" local="yes">C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaNetwork.h</includedby>
+    <includedby refid="ia_vector_8cpp" local="yes">C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaVector.cpp</includedby>
+    <includedby refid="neuro_8cpp" local="yes">C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/neuro.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaVector.h</label>
+        <link refid="ia_vector_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaVector.h</label>
+        <link refid="ia_vector_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaNetwork.h</label>
+        <link refid="ia_network_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/neuro.cpp</label>
+        <link refid="neuro_8cpp"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaMatrix.cpp</label>
+        <link refid="ia_matrix_8cpp"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaVector.cpp</label>
+        <link refid="ia_vector_8cpp"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaMatrix.h</label>
+        <link refid="ia_matrix_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaNetwork.cpp</label>
+        <link refid="ia_network_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classia_vector" prot="public">iaVector</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>****************************************************************************************************<sp/>*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/>Company<sp/>:<sp/>iA</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/>File<sp/><sp/><sp/><sp/>:<sp/>iaVector.h</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Author<sp/><sp/>:<sp/>Aleksandr<sp/>IUSHKEVICH</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Project<sp/>:<sp/>Simple<sp/>NeuroNet</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/>Version<sp/>:<sp/>???</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/>Сreated<sp/>:<sp/>October<sp/>2021</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/>Description:<sp/><sp/><sp/><sp/>Class<sp/>to<sp/>create<sp/>a<sp/>vector<sp/>with<sp/>size<sp/>(m)<sp/>and<sp/>values<sp/>of<sp/>double<sp/>type<sp/>(values).</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>****************************************************************************************************<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classia_vector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classia_vector" kindref="compound">iaVector</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classia_vector_1aeb696e20231b42a4131b137197d744ee" kindref="member">iaVector</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Default<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classia_vector_1aeb696e20231b42a4131b137197d744ee" kindref="member">iaVector</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Constructor<sp/>by<sp/>size</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classia_vector_1aeb696e20231b42a4131b137197d744ee" kindref="member">iaVector</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>values[]);<sp/></highlight><highlight class="comment">//<sp/>Constructor<sp/>with<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classia_vector_1aeb696e20231b42a4131b137197d744ee" kindref="member">iaVector</ref>(<ref refid="classia_vector" kindref="compound">iaVector</ref>&amp;<sp/>otherVector);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Constructor<sp/>of<sp/>copy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classia_vector_1a5f8915a69a7b1460f1a29e5a4e748df3" kindref="member">~iaVector</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Destructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classia_vector_1a82d20ecd1daa52dc1641bef8a39f84a9" kindref="member">sizeOfVector</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>size<sp/>of<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classia_vector_1a0ff4af3e76a789483fbd50cd49eda6a5" kindref="member">printVector</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classia_vector_1a67dab91c20b683b426841bab9b77e4f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/><ref refid="classia_vector_1a67dab91c20b683b426841bab9b77e4f6" kindref="member">operator [] </ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value[j];<sp/>}</highlight></codeline>
+<codeline lineno="32" refid="classia_vector_1a52cd595f0bc9b19d43abc47cc2da2ce5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/><ref refid="classia_vector_1a52cd595f0bc9b19d43abc47cc2da2ce5" kindref="member">operator &amp; </ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;value[j];<sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Size<sp/>of<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>value;<sp/><sp/></highlight><highlight class="comment">//<sp/>Values<sp/>of<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaVector.h"/>
+  </compounddef>
+</doxygen>

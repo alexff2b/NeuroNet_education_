@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="tests_8cpp" kind="file" language="C++">
+    <compoundname>tests.cpp</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="tests_8cpp_1a3a95f4fbd646c7c5affa7154b0afabf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void iaVectorTest</definition>
+        <argsstring>()</argsstring>
+        <name>iaVectorTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/tests.cpp" line="1" column="6" bodyfile="C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/tests.cpp" bodystart="1" bodyend="31"/>
+        <references refid="classia_vector_1a0ff4af3e76a789483fbd50cd49eda6a5" compoundref="ia_vector_8cpp" startline="34" endline="39">iaVector::printVector</references>
+        <references refid="classia_vector_1a82d20ecd1daa52dc1641bef8a39f84a9" compoundref="ia_vector_8cpp" startline="30" endline="32">iaVector::sizeOfVector</references>
+      </memberdef>
+      <memberdef kind="function" id="tests_8cpp_1a3a5b8de02256782aba8a3761e26e44d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void iaMatrixTest</definition>
+        <argsstring>()</argsstring>
+        <name>iaMatrixTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/tests.cpp" line="33" column="6" bodyfile="C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/tests.cpp" bodystart="33" bodyend="69"/>
+        <references refid="classia_matrix_1a81caacb64f7ceeda369f5e6da522facc" compoundref="ia_matrix_8cpp" startline="51" endline="59">iaMatrix::printMatrix</references>
+        <references refid="classia_matrix_1a660da4bfc4021cc0770fcc11da9d972e" compoundref="ia_matrix_8cpp" startline="43" endline="45">iaMatrix::numberOfVectors</references>
+        <references refid="classia_matrix_1a1ce3049b06370bd3fc1dcc0d512d592f" compoundref="ia_matrix_8cpp" startline="47" endline="49">iaMatrix::sizeOfVectors</references>
+      </memberdef>
+      <memberdef kind="function" id="tests_8cpp_1a126908a899157592c5fbd15be2655a74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void iaNetworkTest</definition>
+        <argsstring>()</argsstring>
+        <name>iaNetworkTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/tests.cpp" line="71" column="6" bodyfile="C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/tests.cpp" bodystart="71" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="tests_8h_1a3a95f4fbd646c7c5affa7154b0afabf8" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tests_8cpp_1a3a95f4fbd646c7c5affa7154b0afabf8" kindref="member">iaVectorTest</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>v1[6]{<sp/>1.0,<sp/>2.0,<sp/>3.0,<sp/>4.0,<sp/>5.0,<sp/>6.0<sp/>};</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>v2<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">[15]{<sp/>7.7,<sp/>6.6,<sp/>5.5,<sp/>4.4,<sp/>3.3,<sp/>2.2,<sp/>1.1,<sp/>0.0,<sp/>-1.1,<sp/>-2.2,<sp/>-3.3,<sp/>-4.4,<sp/>-5.5,<sp/>-6.6,<sp/>-7.7<sp/>};</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classia_vector" kindref="compound">iaVector</ref><sp/>vector1;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classia_vector" kindref="compound">iaVector</ref><sp/>vector2(2);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classia_vector" kindref="compound">iaVector</ref><sp/>vector3(6,<sp/>v1);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classia_vector" kindref="compound">iaVector</ref><sp/>vector4;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>vector3.<ref refid="classia_vector_1a0ff4af3e76a789483fbd50cd49eda6a5" kindref="member">printVector</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>vector1<sp/>=<sp/><ref refid="classia_vector" kindref="compound">iaVector</ref>(15,<sp/>v2);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>vector4<sp/>=<sp/><ref refid="classia_vector" kindref="compound">iaVector</ref>(vector1);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>size<sp/>=<sp/>vector1.<ref refid="classia_vector_1a82d20ecd1daa52dc1641bef8a39f84a9" kindref="member">sizeOfVector</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>size<sp/>/<sp/>2;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>temp<sp/>=<sp/>vector1[i];</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector1[i]<sp/>=<sp/>vector1[size<sp/>-<sp/>i<sp/>-<sp/>1];</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector1[size<sp/>-<sp/>i<sp/>-<sp/>1]<sp/>=<sp/>temp;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>15<sp/>/<sp/>2;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>temp<sp/>=<sp/>v2[i];</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v2[i]<sp/>=<sp/>v2[15<sp/>-<sp/>i<sp/>-<sp/>1];</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v2[15<sp/>-<sp/>i<sp/>-<sp/>1]<sp/>=<sp/>temp;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="tests_8h_1a3a5b8de02256782aba8a3761e26e44d0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tests_8cpp_1a3a5b8de02256782aba8a3761e26e44d0" kindref="member">iaMatrixTest</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>v1[2][3]{<sp/>{<sp/>1.0,<sp/>2.0,<sp/>3.0<sp/>},<sp/><sp/>{<sp/>4.0,<sp/>5.0,<sp/>6.0<sp/>}<sp/>};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>v2[3][5]{<sp/>{<sp/>-7.0,<sp/>-6.0,<sp/>-5.0,<sp/>-4.0,<sp/>-3.0<sp/>},<sp/>{<sp/>-2.0,<sp/>-1.0,<sp/>0.0,<sp/>1.0,<sp/>2.0<sp/>},<sp/>{<sp/>3.0,<sp/>4.0,<sp/>5.0,<sp/>6.0,<sp/>7.0<sp/>}<sp/>};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classia_matrix" kindref="compound">iaMatrix</ref><sp/>matrix1;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classia_matrix" kindref="compound">iaMatrix</ref><sp/>matrix2(3,<sp/>0);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classia_matrix" kindref="compound">iaMatrix</ref><sp/>matrix3(2,<sp/>1);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classia_matrix" kindref="compound">iaMatrix</ref><sp/>matrix4(0,<sp/>3);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classia_matrix" kindref="compound">iaMatrix</ref><sp/>matrix5(2,<sp/>3,<sp/>*v1);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classia_matrix" kindref="compound">iaMatrix</ref><sp/>matrix6;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>matrix5.<ref refid="classia_matrix_1a81caacb64f7ceeda369f5e6da522facc" kindref="member">printMatrix</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>matrix1<sp/>=<sp/><ref refid="classia_matrix" kindref="compound">iaMatrix</ref>(3,<sp/>5,<sp/>*v2);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>1;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>3;<sp/>j++)<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>tempValue<sp/>=<sp/>v1[i][j];</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v1[i][j]<sp/>=<sp/>v1[2<sp/>-<sp/>i<sp/>-<sp/>1][3<sp/>-<sp/>j<sp/>-<sp/>1];</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v1[2<sp/>-<sp/>i<sp/>-<sp/>1][3<sp/>-<sp/>j<sp/>-<sp/>1]<sp/>=<sp/>tempValue;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>matrix6<sp/>=<sp/><ref refid="classia_matrix" kindref="compound">iaMatrix</ref>(matrix5);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>matrix2<sp/>=<sp/><ref refid="classia_matrix" kindref="compound">iaMatrix</ref>(matrix1.<ref refid="classia_matrix_1a660da4bfc4021cc0770fcc11da9d972e" kindref="member">numberOfVectors</ref>(),<sp/>matrix1.<ref refid="classia_matrix_1a1ce3049b06370bd3fc1dcc0d512d592f" kindref="member">sizeOfVectors</ref>());</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>matrix1.<ref refid="classia_matrix_1a660da4bfc4021cc0770fcc11da9d972e" kindref="member">numberOfVectors</ref>();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>matrix2[matrix1.<ref refid="classia_matrix_1a660da4bfc4021cc0770fcc11da9d972e" kindref="member">numberOfVectors</ref>()<sp/>-<sp/>i<sp/>-<sp/>1]<sp/>=<sp/><ref refid="classia_vector" kindref="compound">iaVector</ref>(matrix1.<ref refid="classia_matrix_1a1ce3049b06370bd3fc1dcc0d512d592f" kindref="member">sizeOfVectors</ref>());</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>matrix1.<ref refid="classia_matrix_1a1ce3049b06370bd3fc1dcc0d512d592f" kindref="member">sizeOfVectors</ref>();<sp/>j++)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>matrix2[matrix1.<ref refid="classia_matrix_1a660da4bfc4021cc0770fcc11da9d972e" kindref="member">numberOfVectors</ref>()<sp/>-<sp/>i<sp/>-<sp/>1][matrix1.<ref refid="classia_matrix_1a1ce3049b06370bd3fc1dcc0d512d592f" kindref="member">sizeOfVectors</ref>()<sp/>-<sp/>j<sp/>-<sp/>1]<sp/>=<sp/>matrix1[i][j];</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>matrix5<sp/>=<sp/>matrix4;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="tests_8h_1a126908a899157592c5fbd15be2655a74" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tests_8cpp_1a126908a899157592c5fbd15be2655a74" kindref="member">iaNetworkTest</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numOfLayers<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sizes[3]<sp/>=<sp/>{<sp/>4,<sp/>8,<sp/>1<sp/>};</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classia_network" kindref="compound">iaNetwork</ref><sp/>network(numOfLayers,<sp/>sizes);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/tests.cpp"/>
+  </compounddef>
+</doxygen>

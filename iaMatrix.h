@@ -28,9 +28,10 @@ public:
 
 	~iaMatrix();									// Destructor
 
-	int numberOfVectors();
-	int sizeOfVectors();
-	void printMatrix();
+	int numberOfVectors();							// Return number of vectros in matrix
+	int sizeOfVectors();							// Return size of vector in matrix
+
+	void printMatrix();								// Print of matrix
 
 	iaVector& operator [](int i) { return vector[i]; }
 	iaVector* operator & (int i) { return &vector[0]; }

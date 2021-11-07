@@ -12,18 +12,20 @@
  * **************************************************************************************************** */
 #include "iaVector.h"
 
-iaVector::iaVector() : iaVector(0) { }
+iaVector::iaVector() : iaVector(0) { }	// Call  constructor by size with size 0
 
 iaVector::iaVector(int m) {
-	this->m = m;
-	this->value = (m != 0 ? new double[m]() : nullptr);
+	this->m = m;										// Set siaze of vector
+	this->value = (m != 0 ? new double[m]() : nullptr);	// Create vector of values with m size
 }
 
-iaVector::iaVector(int m, const double values[]) : iaVector(m) {
-	for (int j = 0; j < this->m; j++)	this->value[j] = values[j];
+iaVector::iaVector(int m, const double values[]) : iaVector(m) {	// Call constructor by sizes with m size before
+	for (int j = 0; j < this->m; j++) {		// Values in vector:
+		this->value[j] = values[j];			// Save value in vector at index [j]
+	}
 }
 
-iaVector::iaVector(iaVector& otherVector) : iaVector(otherVector.m, otherVector.value) { }
+iaVector::iaVector(iaVector& otherVector) : iaVector(otherVector.m, otherVector.value) { } // Call constructor by values with other vector values and size
 
 iaVector::~iaVector() {}
 
@@ -32,6 +34,7 @@ int iaVector::sizeOfVector() {
 }
 
 void iaVector::printVector() {
+
 	std::cout << "Layer size : " << m << "\n" << "Address  - " << this << std::endl;
 	for (int j = 0; j < m; j++)
 		std::cout << "(" << &value[j] << ") : \t" << value[j] << std::endl;

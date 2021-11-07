@@ -1,0 +1,166 @@
+.TH "iaNetwork" 3 "Сб 6 Ноя 2021" "Neuro Net" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+iaNetwork
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <iaNetwork\&.h>\fP
+.SS "Классы"
+
+.in +1c
+.ti -1c
+.RI "struct \fBiaLayer\fP"
+.br
+.in -1c
+.SS "Открытые типы"
+
+.in +1c
+.ti -1c
+.RI "enum \fBactivation\fP { \fBHyperbolic_Tangent\fP, \fBArctangent\fP, \fBSigmoid\fP, \fBReLu\fP, \fBGaussian\fP, \fBSin\fP, \fBSinc\fP }"
+.br
+.in -1c
+.SS "Открытые члены"
+
+.in +1c
+.ti -1c
+.RI "\fBiaNetwork\fP ()"
+.br
+.ti -1c
+.RI "\fBiaNetwork\fP (int layersCount)"
+.br
+.ti -1c
+.RI "\fBiaNetwork\fP (int layersCount, int sizes[])"
+.br
+.ti -1c
+.RI "\fBiaNetwork\fP (\fBnetSetings\fP setings)"
+.br
+.ti -1c
+.RI "\fB~iaNetwork\fP ()"
+.br
+.ti -1c
+.RI "\fBiaVector\fP \fBForwardPropogation\fP (\fBiaVector\fP inputVector, \fBactivation\fP foncActiv)"
+.br
+.ti -1c
+.RI "void \fBBackwardPropogation\fP (\fBiaVector\fP outputVector, double *error)"
+.br
+.ti -1c
+.RI "void \fBUpdateWeights\fP (double alpha)"
+.br
+.ti -1c
+.RI "void \fBTrain\fP (\fBiaMatrix\fP X, \fBiaMatrix\fP Y, double alpha, double eps, int epochs)"
+.br
+.ti -1c
+.RI "void \fBInitWeigths\fP (\fBiaMatrix\fP newWeights)"
+.br
+.in -1c
+.SS "Открытые атрибуты"
+
+.in +1c
+.ti -1c
+.RI "int \fBlayersNumber\fP"
+.br
+.ti -1c
+.RI "\fBiaMatrix\fP * \fBweights\fP"
+.br
+.ti -1c
+.RI "\fBiaLayer\fP * \fBlayers\fP"
+.br
+.ti -1c
+.RI "\fBiaVector\fP * \fBdeltas\fP"
+.br
+.in -1c
+.SH "Подробное описание"
+.PP 
+См\&. определение в файле iaNetwork\&.h строка 28
+.SH "Перечисления"
+.PP 
+.SS "enum \fBiaNetwork::activation\fP"
+
+.PP
+\fBЭлементы перечислений\fP
+.in +1c
+.TP
+\fB\fIHyperbolic_Tangent \fP\fP
+.TP
+\fB\fIArctangent \fP\fP
+.TP
+\fB\fISigmoid \fP\fP
+.TP
+\fB\fIReLu \fP\fP
+.TP
+\fB\fIGaussian \fP\fP
+.TP
+\fB\fISin \fP\fP
+.TP
+\fB\fISinc \fP\fP
+.PP
+См\&. определение в файле iaNetwork\&.h строка 30
+.SH "Конструктор(ы)"
+.PP 
+.SS "iaNetwork::iaNetwork ()"
+
+.PP
+См\&. определение в файле iaNetwork\&.cpp строка 5
+.SS "iaNetwork::iaNetwork (int layersCount)"
+
+.PP
+См\&. определение в файле iaNetwork\&.cpp строка 9
+.SS "iaNetwork::iaNetwork (int layersCount, int sizes[])"
+
+.PP
+См\&. определение в файле iaNetwork\&.cpp строка 16
+.SS "iaNetwork::iaNetwork (\fBnetSetings\fP setings)"
+
+.PP
+См\&. определение в файле iaNetwork\&.cpp строка 44
+.SS "iaNetwork::~iaNetwork ()"
+
+.PP
+См\&. определение в файле iaNetwork\&.cpp строка 48
+.SH "Методы"
+.PP 
+.SS "void iaNetwork::BackwardPropogation (\fBiaVector\fP outputVector, double * error)"
+
+.PP
+См\&. определение в файле iaNetwork\&.cpp строка 108
+.SS "\fBiaVector\fP iaNetwork::ForwardPropogation (\fBiaVector\fP inputVector, \fBactivation\fP foncActiv)"
+
+.PP
+См\&. определение в файле iaNetwork\&.cpp строка 52
+.SS "void iaNetwork::InitWeigths (\fBiaMatrix\fP newWeights)"
+
+.PP
+См\&. определение в файле iaNetwork\&.cpp строка 151
+.SS "void iaNetwork::Train (\fBiaMatrix\fP X, \fBiaMatrix\fP Y, double alpha, double eps, int epochs)"
+
+.PP
+См\&. определение в файле iaNetwork\&.cpp строка 136
+.SS "void iaNetwork::UpdateWeights (double alpha)"
+
+.PP
+См\&. определение в файле iaNetwork\&.cpp строка 126
+.SH "Данные класса"
+.PP 
+.SS "\fBiaVector\fP* iaNetwork::deltas"
+
+.PP
+См\&. определение в файле iaNetwork\&.h строка 51
+.SS "\fBiaLayer\fP* iaNetwork::layers"
+
+.PP
+См\&. определение в файле iaNetwork\&.h строка 50
+.SS "int iaNetwork::layersNumber"
+
+.PP
+См\&. определение в файле iaNetwork\&.h строка 40
+.SS "\fBiaMatrix\fP* iaNetwork::weights"
+
+.PP
+См\&. определение в файле iaNetwork\&.h строка 49
+
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для Neuro Net из исходного текста\&.

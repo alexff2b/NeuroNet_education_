@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structnet_setings" kind="struct" language="C++" prot="public">
+    <compoundname>netSetings</compoundname>
+    <includes refid="ia_network_8h" local="no">iaNetwork.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structnet_setings_1ac5cdb7e1f475cf175f960cbf42c99ef0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int netSetings::numberOfLayers</definition>
+        <argsstring></argsstring>
+        <name>numberOfLayers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaNetwork.h" line="24" column="5" bodyfile="C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaNetwork.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="neuro_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="neuro_8cpp" startline="27" endline="107">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structnet_setings_1a8dc3a8abd51839a3300bf775c668fd5d" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* netSetings::sizes</definition>
+        <argsstring></argsstring>
+        <name>sizes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaNetwork.h" line="25" column="5" bodyfile="C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaNetwork.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="neuro_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="neuro_8cpp" startline="27" endline="107">main</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structnet_setings_1a4c8de026e210cbb38586082d714a8995" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>netSetings::netSetings</definition>
+        <argsstring>()</argsstring>
+        <name>netSetings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaNetwork.h" line="13" column="1" bodyfile="C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaNetwork.h" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="structnet_setings_1a34439a66d62ad3ce15cc4dc167b3304b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>netSetings::netSetings</definition>
+        <argsstring>(int n)</argsstring>
+        <name>netSetings</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaNetwork.h" line="15" column="1" bodyfile="C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaNetwork.h" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="structnet_setings_1aa52e19d4c7029439b5b863df74ca68ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>netSetings::netSetings</definition>
+        <argsstring>(int n, int s[])</argsstring>
+        <name>netSetings</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaNetwork.h" line="20" column="1" bodyfile="C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaNetwork.h" bodystart="20" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaNetwork.h" line="11" column="17" bodyfile="C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaNetwork.h" bodystart="11" bodyend="26"/>
+    <listofallmembers>
+      <member refid="structnet_setings_1a4c8de026e210cbb38586082d714a8995" prot="public" virt="non-virtual"><scope>netSetings</scope><name>netSetings</name></member>
+      <member refid="structnet_setings_1a34439a66d62ad3ce15cc4dc167b3304b" prot="public" virt="non-virtual"><scope>netSetings</scope><name>netSetings</name></member>
+      <member refid="structnet_setings_1aa52e19d4c7029439b5b863df74ca68ee" prot="public" virt="non-virtual"><scope>netSetings</scope><name>netSetings</name></member>
+      <member refid="structnet_setings_1ac5cdb7e1f475cf175f960cbf42c99ef0" prot="public" virt="non-virtual"><scope>netSetings</scope><name>numberOfLayers</name></member>
+      <member refid="structnet_setings_1a8dc3a8abd51839a3300bf775c668fd5d" prot="public" virt="non-virtual"><scope>netSetings</scope><name>sizes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

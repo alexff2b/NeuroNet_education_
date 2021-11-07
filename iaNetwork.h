@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include <fstream>
 #include <random>
 
 #include "iaVector.h"
@@ -8,8 +9,29 @@
 
 using namespace std;
 
+struct netSetings {
+
+	netSetings();
+	netSetings(int n);
+	netSetings(int n, int s[]);
+
+	int numberOfLayers;
+	int* sizes;
+	char* weightsFile;
+};
+
 class iaNetwork {
 public:
+	enum activation {
+		Hyperbolic_Tangent,
+		Arctangent,
+		Sigmoid,
+		ReLu,
+		Gaussian,
+		Sin,
+		Sinc
+	};
+
 	int layersNumber;
 
 	struct iaLayer {
@@ -23,26 +45,20 @@ public:
 	iaLayer* layers;
 	iaVector* deltas;
 
-
 	iaNetwork();
 	iaNetwork(int layersCount);
 	iaNetwork(int layersCount, int sizes[]);
+	iaNetwork(netSetings setings);
 
 	~iaNetwork();
 
-	iaVector ForwardPropogation(iaVector inputVector);
+	iaVector ForwardPropogation(iaVector inputVector, activation foncActiv);
 	void BackwardPropogation(iaVector outputVector, double *error);
 	void UpdateWeights(double alpha);
 	void Train(iaMatrix X, iaMatrix Y, double alpha, double eps, int epochs);
-	void InitWeigths(iaMatrix newWeights);
-
-	
-
-
-//	double& operator [] (int j) { return value[j]; }
-
-//	double* operator & (int j) { return &value[j]; }
 
 private:
-protected:
+	void SaveError(int epoch, double error);
+	void SaveWeights();
+	void LoadWeights();
 };

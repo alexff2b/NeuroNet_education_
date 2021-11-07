@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="ia_vector_8cpp" kind="file" language="C++">
+    <compoundname>iaVector.cpp</compoundname>
+    <includes refid="ia_vector_8h" local="yes">iaVector.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>iaVector.h</label>
+        <link refid="ia_vector_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaVector.cpp</label>
+        <link refid="ia_vector_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>****************************************************************************************************<sp/>*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/>Company<sp/>:<sp/>iA</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/>File<sp/><sp/><sp/><sp/>:<sp/>iaVector.cpp</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Author<sp/><sp/>:<sp/>Aleksandr<sp/>IUSHKEVICH</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Project<sp/>:<sp/>Simple<sp/>NeuroNet</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/>Version<sp/>:<sp/>???</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/>Сreated<sp/>:<sp/>October<sp/>2021</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/>Description:<sp/><sp/><sp/><sp/>.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>****************************************************************************************************<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ia_vector_8h" kindref="compound">iaVector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classia_vector_1aeb696e20231b42a4131b137197d744ee" refkind="member"><highlight class="normal"><ref refid="classia_vector_1aeb696e20231b42a4131b137197d744ee" kindref="member">iaVector::iaVector</ref>()<sp/>:<sp/><ref refid="classia_vector" kindref="compound">iaVector</ref>(0)<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classia_vector_1a790c503ace60e30fc7d1a81345118477" refkind="member"><highlight class="normal"><ref refid="classia_vector_1aeb696e20231b42a4131b137197d744ee" kindref="member">iaVector::iaVector</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m)<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;m<sp/>=<sp/>m;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;value<sp/>=<sp/>(m<sp/>!=<sp/>0<sp/>?<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">[m]()<sp/>:<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classia_vector_1a268d4ca5b1f07e60ccb88fe5ab85057b" refkind="member"><highlight class="normal"><ref refid="classia_vector_1aeb696e20231b42a4131b137197d744ee" kindref="member">iaVector::iaVector</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>values[])<sp/>:<sp/><ref refid="classia_vector" kindref="compound">iaVector</ref>(m)<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>this-&gt;m;<sp/>j++)<sp/><sp/><sp/>this-&gt;value[j]<sp/>=<sp/>values[j];</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classia_vector_1acb1dcdc5070c8e8b0fff6a3f19b87b90" refkind="member"><highlight class="normal"><ref refid="classia_vector_1aeb696e20231b42a4131b137197d744ee" kindref="member">iaVector::iaVector</ref>(<ref refid="classia_vector" kindref="compound">iaVector</ref>&amp;<sp/>otherVector)<sp/>:<sp/><ref refid="classia_vector" kindref="compound">iaVector</ref>(otherVector.m,<sp/>otherVector.value)<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classia_vector_1a5f8915a69a7b1460f1a29e5a4e748df3" refkind="member"><highlight class="normal"><ref refid="classia_vector_1a5f8915a69a7b1460f1a29e5a4e748df3" kindref="member">iaVector::~iaVector</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classia_vector_1a82d20ecd1daa52dc1641bef8a39f84a9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classia_vector_1a82d20ecd1daa52dc1641bef8a39f84a9" kindref="member">iaVector::sizeOfVector</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classia_vector_1a0ff4af3e76a789483fbd50cd49eda6a5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classia_vector_1a0ff4af3e76a789483fbd50cd49eda6a5" kindref="member">iaVector::printVector</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Layer<sp/>size<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>m<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Address<sp/><sp/>-<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>m;<sp/>j++)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;(&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>&amp;value[j]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;)<sp/>:<sp/>\t&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>value[j]<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaVector.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Neuro Net: Исходный файл C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/iaNetwork.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Neuro Net
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('ia_network_8cpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">iaNetwork.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ia_network_8cpp.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ia_network_8h.html">iaNetwork.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="classia_network.html#a11d94ca89a6bf4e92696cde2899f80fb">    5</a></span>&#160;<a class="code" href="classia_network.html#a11d94ca89a6bf4e92696cde2899f80fb">iaNetwork::iaNetwork</a>() : <a class="code" href="classia_network.html">iaNetwork</a>(0) {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classia_network.html#adbf695ade31b10e572676924d6360ed8">    9</a></span>&#160;<a class="code" href="classia_network.html#a11d94ca89a6bf4e92696cde2899f80fb">iaNetwork::iaNetwork</a>(<span class="keywordtype">int</span> layersCount) {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    this-&gt;<a class="code" href="classia_network.html#ac74fb9841f29cd367bd13fb66fcfb081">layersNumber</a> = layersCount - 1;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    this-&gt;<a class="code" href="classia_network.html#ac18ca359ad1c64561ac28db11c8b3fb6">weights</a> = (this-&gt;<a class="code" href="classia_network.html#ac74fb9841f29cd367bd13fb66fcfb081">layersNumber</a> != 0 ? <span class="keyword">new</span> <a class="code" href="classia_matrix.html">iaMatrix</a>[this-&gt;<a class="code" href="classia_network.html#ac74fb9841f29cd367bd13fb66fcfb081">layersNumber</a>]() : <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a> = (this-&gt;<a class="code" href="classia_network.html#ac74fb9841f29cd367bd13fb66fcfb081">layersNumber</a> != 0 ? <span class="keyword">new</span> <a class="code" href="structia_network_1_1ia_layer.html">iaLayer</a>[this-&gt;<a class="code" href="classia_network.html#ac74fb9841f29cd367bd13fb66fcfb081">layersNumber</a>]() : <span class="keyword">nullptr</span>); </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    this-&gt;<a class="code" href="classia_network.html#a940cb46a6064b4684d7f80b81a6acf92">deltas</a> = (this-&gt;<a class="code" href="classia_network.html#ac74fb9841f29cd367bd13fb66fcfb081">layersNumber</a> != 0 ? <span class="keyword">new</span> <a class="code" href="classia_vector.html">iaVector</a>[this-&gt;<a class="code" href="classia_network.html#ac74fb9841f29cd367bd13fb66fcfb081">layersNumber</a>]() : <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classia_network.html#a0684bcd9d328e7b9519f10a0775f399c">   16</a></span>&#160;<a class="code" href="classia_network.html#a11d94ca89a6bf4e92696cde2899f80fb">iaNetwork::iaNetwork</a>(<span class="keywordtype">int</span> layersCount, <span class="keywordtype">int</span> sizes[]) : <a class="code" href="classia_network.html">iaNetwork</a>(layersCount) {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    random_device randomGenerator;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    normal_distribution&lt;double&gt; dist(-0.5, 0.5);    </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> l = 1; l &lt; layersCount; l++) {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">int</span> x_size = sizes[l];</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">int</span> y_size = sizes[l - 1];</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">int</span> matrixSize = x_size * y_size;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">double</span> *randomNumbers = <span class="keyword">new</span> <span class="keywordtype">double</span>[matrixSize]();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; sizes[l]; i++) {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; sizes[l - 1]; j++) {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keywordtype">int</span> index = i * sizes[l - 1] + j;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                randomNumbers[index] = dist(randomGenerator);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        this-&gt;<a class="code" href="classia_network.html#ac18ca359ad1c64561ac28db11c8b3fb6">weights</a>[l - 1] = <a class="code" href="classia_matrix.html">iaMatrix</a>(sizes[l], sizes[l - 1], randomNumbers);     <span class="comment">//</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l - 1].<a class="code" href="structia_network_1_1ia_layer.html#a310466db01d0e22406c4b63b95f70e99">x</a> = <a class="code" href="classia_vector.html">iaVector</a>(sizes[l - 1]);         <span class="comment">// Создание вектора для входа слоя</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l - 1].<a class="code" href="structia_network_1_1ia_layer.html#a338a6d8cb5fbbaf6b3c93503bd19833e">z</a> = <a class="code" href="classia_vector.html">iaVector</a>(sizes[l]);             <span class="comment">// Создание вектора для выхода слоя</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l - 1].<a class="code" href="structia_network_1_1ia_layer.html#a2aae1c81923041458bdd7d8dbe668108">fD</a> = <a class="code" href="classia_vector.html">iaVector</a>(sizes[l]);            <span class="comment">// Создание вектора для производной активации слоя</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        this-&gt;<a class="code" href="classia_network.html#a940cb46a6064b4684d7f80b81a6acf92">deltas</a>[l - 1] = <a class="code" href="classia_vector.html">iaVector</a>(sizes[l]);               <span class="comment">// Создание вектора для дельт ошибок слоя</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">delete</span>[] randomNumbers;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classia_network.html#a078f93da3cca25c0407075a47afc639e">   44</a></span>&#160;<a class="code" href="classia_network.html#a11d94ca89a6bf4e92696cde2899f80fb">iaNetwork::iaNetwork</a>(<a class="code" href="structnet_setings.html">netSetings</a> setings) : <a class="code" href="classia_network.html">iaNetwork</a>(setings.numberOfLayers, setings.sizes) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classia_network.html#a910724de76aa40461b3de8dd6bb8dc4e">   48</a></span>&#160;<a class="code" href="classia_network.html#a910724de76aa40461b3de8dd6bb8dc4e">iaNetwork::~iaNetwork</a>() {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classia_network.html#a04287239300c639035ccd36178feeaad">   52</a></span>&#160;<a class="code" href="classia_vector.html">iaVector</a> <a class="code" href="classia_network.html#a04287239300c639035ccd36178feeaad">iaNetwork::ForwardPropogation</a>(<a class="code" href="classia_vector.html">iaVector</a> inputVector, <a class="code" href="classia_network.html#a81f89da91c4331aff0a5388e81f61592">activation</a> foncActiv) { <span class="comment">// Получение выхода сети (прямое распространение)</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> l = 0; l &lt; this-&gt;<a class="code" href="classia_network.html#ac74fb9841f29cd367bd13fb66fcfb081">layersNumber</a>; l++) {                              <span class="comment">// Перебор слоев</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">if</span> (l == 0) {                                                           <span class="comment">// Если активный слой нулевой</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; inputVector.<a class="code" href="classia_vector.html#a82d20ecd1daa52dc1641bef8a39f84a9">sizeOfVector</a>(); i++) {              <span class="comment">// Перебор нейронов</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l].<a class="code" href="structia_network_1_1ia_layer.html#a310466db01d0e22406c4b63b95f70e99">x</a>[i] = inputVector[i];                          <span class="comment">// Получить входные сигналы</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        } <span class="keywordflow">else</span> {                                                                <span class="comment">// иначе если это внутренный или выходной слои</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l - 1].<a class="code" href="structia_network_1_1ia_layer.html#a338a6d8cb5fbbaf6b3c93503bd19833e">z</a>.<a class="code" href="classia_vector.html#a82d20ecd1daa52dc1641bef8a39f84a9">sizeOfVector</a>(); i++) {    <span class="comment">// Перебор нейронов</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l].<a class="code" href="structia_network_1_1ia_layer.html#a310466db01d0e22406c4b63b95f70e99">x</a>[i] = this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l - 1].<a class="code" href="structia_network_1_1ia_layer.html#a338a6d8cb5fbbaf6b3c93503bd19833e">z</a>[i];                <span class="comment">// Получить входные сигналы от предыдущего слоя</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; this-&gt;<a class="code" href="classia_network.html#ac18ca359ad1c64561ac28db11c8b3fb6">weights</a>[l].<a class="code" href="classia_matrix.html#a660da4bfc4021cc0770fcc11da9d972e">numberOfVectors</a>(); i++) {          <span class="comment">// Перебор нейронов</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordtype">double</span> y = 0;                                                       <span class="comment">// Выход функции активации нейрона</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; this-&gt;<a class="code" href="classia_network.html#ac18ca359ad1c64561ac28db11c8b3fb6">weights</a>[l].<a class="code" href="classia_matrix.html#a1ce3049b06370bd3fc1dcc0d512d592f">sizeOfVectors</a>(); j++)          <span class="comment">// Перебор входов в нейрон</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                y += this-&gt;<a class="code" href="classia_network.html#ac18ca359ad1c64561ac28db11c8b3fb6">weights</a>[l][i][j] * this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l].x[j];             <span class="comment">// Подсчет взвешенной суммы входных сигналов</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">switch</span> (foncActiv) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="classia_network.html#a81f89da91c4331aff0a5388e81f61592a3f9486d01e74209984645c9f5f8e3271">Hyperbolic_Tangent</a>: {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l].<a class="code" href="structia_network_1_1ia_layer.html#a338a6d8cb5fbbaf6b3c93503bd19833e">z</a>[i] = tan(y);                              <span class="comment">// Активация функции гиперболическим тангенсом (-1, 1)</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l].<a class="code" href="structia_network_1_1ia_layer.html#a2aae1c81923041458bdd7d8dbe668108">fD</a>[i] = 1 - pow(this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l].z[i], 2);   <span class="comment">// *this-&gt;layers[l].z[i];    // Производная гиперболического тангенса</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="keywordflow">break</span>; }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="classia_network.html#a81f89da91c4331aff0a5388e81f61592ab77f370239b7574a3692c561c52fa9e6">Arctangent</a>: {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l].<a class="code" href="structia_network_1_1ia_layer.html#a338a6d8cb5fbbaf6b3c93503bd19833e">z</a>[i] = atan(y);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l].<a class="code" href="structia_network_1_1ia_layer.html#a2aae1c81923041458bdd7d8dbe668108">fD</a>[i] = 1 / (y * y + 1);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                <span class="keywordflow">break</span>; }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="classia_network.html#a81f89da91c4331aff0a5388e81f61592a84928249b44745e58420845215c1c4df">Sigmoid</a>: {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l].<a class="code" href="structia_network_1_1ia_layer.html#a338a6d8cb5fbbaf6b3c93503bd19833e">z</a>[i] = 1 / (1 + exp(-y));                   <span class="comment">// Активация функции сигмойдной функцией (0, 1)</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l].<a class="code" href="structia_network_1_1ia_layer.html#a2aae1c81923041458bdd7d8dbe668108">fD</a>[i] = <a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l].<a class="code" href="structia_network_1_1ia_layer.html#a338a6d8cb5fbbaf6b3c93503bd19833e">z</a>[i] * (-<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l].<a class="code" href="structia_network_1_1ia_layer.html#a338a6d8cb5fbbaf6b3c93503bd19833e">z</a>[i]); <span class="comment">// Производная сигмойдной функции</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                <span class="keywordflow">break</span>; }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="classia_network.html#a81f89da91c4331aff0a5388e81f61592a54a1ea1b0aefb67a9be66d7bcf3d53a7">ReLu</a>: {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l].<a class="code" href="structia_network_1_1ia_layer.html#a338a6d8cb5fbbaf6b3c93503bd19833e">z</a>[i] = y &gt; 0 ? y : 0;   <span class="comment">// Активация функции ReLU [0, y)</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l].<a class="code" href="structia_network_1_1ia_layer.html#a2aae1c81923041458bdd7d8dbe668108">fD</a>[i] = y &gt; 0 ? 1 : 0;  <span class="comment">// Производная функции ReLU</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <span class="keywordflow">break</span>; }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="classia_network.html#a81f89da91c4331aff0a5388e81f61592ab3784b2f47eb353064834d258dc91d76">Gaussian</a>: {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l].<a class="code" href="structia_network_1_1ia_layer.html#a338a6d8cb5fbbaf6b3c93503bd19833e">z</a>[i] = exp(-y * y);             <span class="comment">// Активация функции Гаусса (0, 1]</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l].<a class="code" href="structia_network_1_1ia_layer.html#a2aae1c81923041458bdd7d8dbe668108">fD</a>[i] = -2 * y * exp(-y * y);   <span class="comment">// Производная функции Гаусса</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="keywordflow">break</span>; }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="classia_network.html#a81f89da91c4331aff0a5388e81f61592aa810982671b7fe910f9b073394fdefcd">Sin</a>: {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l].<a class="code" href="structia_network_1_1ia_layer.html#a338a6d8cb5fbbaf6b3c93503bd19833e">z</a>[i] = sin(y);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l].<a class="code" href="structia_network_1_1ia_layer.html#a2aae1c81923041458bdd7d8dbe668108">fD</a>[i] = cos(y);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                <span class="keywordflow">break</span>; }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="classia_network.html#a81f89da91c4331aff0a5388e81f61592a860db4f245c33e84faf1d955305c14e7">Sinc</a>: {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l].<a class="code" href="structia_network_1_1ia_layer.html#a338a6d8cb5fbbaf6b3c93503bd19833e">z</a>[i] = (y == 0 ? 1 : sin(y) / y);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l].<a class="code" href="structia_network_1_1ia_layer.html#a2aae1c81923041458bdd7d8dbe668108">fD</a>[i] = (y == 0 ? 0 : cos(y) / y - sin(y) / y);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <span class="keywordflow">break</span>; }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordflow">default</span>: { <span class="comment">// Identity</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l].<a class="code" href="structia_network_1_1ia_layer.html#a338a6d8cb5fbbaf6b3c93503bd19833e">z</a>[i] = y;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l].<a class="code" href="structia_network_1_1ia_layer.html#a2aae1c81923041458bdd7d8dbe668108">fD</a>[i] = 1;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                <span class="keywordflow">break</span>; }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[<a class="code" href="classia_network.html#ac74fb9841f29cd367bd13fb66fcfb081">layersNumber</a> - 1].<a class="code" href="structia_network_1_1ia_layer.html#a338a6d8cb5fbbaf6b3c93503bd19833e">z</a>;  <span class="comment">// Возврат результата</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classia_network.html#a634697f9880299b612e809d14b1b0eea">  108</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classia_network.html#a634697f9880299b612e809d14b1b0eea">iaNetwork::BackwardPropogation</a>(<a class="code" href="classia_vector.html">iaVector</a> outputVector, <span class="keywordtype">double</span>* error) {             <span class="comment">// Подготовка к обновлению весовых коэффициентов (обратное распространение)</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    *error = 0;                                                                         <span class="comment">// Сброс величины ошибки в ноль</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">int</span> last = this-&gt;<a class="code" href="classia_network.html#ac74fb9841f29cd367bd13fb66fcfb081">layersNumber</a> - 1;                                                  <span class="comment">// Установка предыдущего перед последним слоя</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; outputVector.<a class="code" href="classia_vector.html#a82d20ecd1daa52dc1641bef8a39f84a9">sizeOfVector</a>(); i++) {                             <span class="comment">// Перебор нейронов</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordtype">double</span> err = this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[last].<a class="code" href="structia_network_1_1ia_layer.html#a338a6d8cb5fbbaf6b3c93503bd19833e">z</a>[i] - outputVector[i];                         <span class="comment">// Вычисление ошибки</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        this-&gt;<a class="code" href="classia_network.html#a940cb46a6064b4684d7f80b81a6acf92">deltas</a>[last][i] = err * this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[last].<a class="code" href="structia_network_1_1ia_layer.html#a2aae1c81923041458bdd7d8dbe668108">fD</a>[i];                         <span class="comment">// Вычисление дельты</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        *error = err * err / 2;                                                         <span class="comment">// Подсчет величины ошибки (среднеквадратичное отклонение)</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> l = last; l &gt; 0; l--) {                                                    <span class="comment">// Обратный перебор слоев</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; this-&gt;<a class="code" href="classia_network.html#ac18ca359ad1c64561ac28db11c8b3fb6">weights</a>[l].<a class="code" href="classia_matrix.html#a1ce3049b06370bd3fc1dcc0d512d592f">sizeOfVectors</a>(); j++) {                    <span class="comment">// Перебо нейронов</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            this-&gt;<a class="code" href="classia_network.html#a940cb46a6064b4684d7f80b81a6acf92">deltas</a>[l - 1][j] = 0;                                                 <span class="comment">// Сброс дельты</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; this-&gt;<a class="code" href="classia_network.html#ac18ca359ad1c64561ac28db11c8b3fb6">weights</a>[l].<a class="code" href="classia_matrix.html#a660da4bfc4021cc0770fcc11da9d972e">numberOfVectors</a>(); i++)                <span class="comment">// Перебор входов в нейрон</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                this-&gt;<a class="code" href="classia_network.html#a940cb46a6064b4684d7f80b81a6acf92">deltas</a>[l - 1][j] += this-&gt;<a class="code" href="classia_network.html#ac18ca359ad1c64561ac28db11c8b3fb6">weights</a>[l][i][j] * this-&gt;<a class="code" href="classia_network.html#a940cb46a6064b4684d7f80b81a6acf92">deltas</a>[l][i];  <span class="comment">// Коррекция дельты</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            this-&gt;<a class="code" href="classia_network.html#a940cb46a6064b4684d7f80b81a6acf92">deltas</a>[l - 1][j] *= this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l - 1].<a class="code" href="structia_network_1_1ia_layer.html#a2aae1c81923041458bdd7d8dbe668108">fD</a>[j];                        <span class="comment">// Коррекция последней дельты</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="classia_network.html#a420e5b50a78381732682bb0187ed8c32">  126</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classia_network.html#a420e5b50a78381732682bb0187ed8c32">iaNetwork::UpdateWeights</a>(<span class="keywordtype">double</span> alpha) {                                                   <span class="comment">// Обновление весовых коэффициентов (alpha - скорость обучения)</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> l = 0; l &lt; this-&gt;<a class="code" href="classia_network.html#ac74fb9841f29cd367bd13fb66fcfb081">layersNumber</a>; l++) {                                              <span class="comment">// Перебор слоев</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; this-&gt;<a class="code" href="classia_network.html#ac18ca359ad1c64561ac28db11c8b3fb6">weights</a>[l].<a class="code" href="classia_matrix.html#a660da4bfc4021cc0770fcc11da9d972e">numberOfVectors</a>(); i++) {                          <span class="comment">// Перебор нейронов</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; this-&gt;<a class="code" href="classia_network.html#ac18ca359ad1c64561ac28db11c8b3fb6">weights</a>[l].<a class="code" href="classia_matrix.html#a1ce3049b06370bd3fc1dcc0d512d592f">sizeOfVectors</a>(); j++) {                        <span class="comment">// Перебор входов в нейрон</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                this-&gt;<a class="code" href="classia_network.html#ac18ca359ad1c64561ac28db11c8b3fb6">weights</a>[l][i][j] -= alpha * this-&gt;<a class="code" href="classia_network.html#a940cb46a6064b4684d7f80b81a6acf92">deltas</a>[l][i] * this-&gt;<a class="code" href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">layers</a>[l].<a class="code" href="structia_network_1_1ia_layer.html#a310466db01d0e22406c4b63b95f70e99">x</a>[j];    <span class="comment">// Обновление весового коэффициента</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="classia_network.html#a411665c95fe0be2fa526c30eb90462ef">  136</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classia_network.html#a411665c95fe0be2fa526c30eb90462ef">iaNetwork::Train</a>(<a class="code" href="classia_matrix.html">iaMatrix</a> X, <a class="code" href="classia_matrix.html">iaMatrix</a> Y, <span class="keywordtype">double</span> alpha, <span class="keywordtype">double</span> eps, <span class="keywordtype">int</span> epochs) {   <span class="comment">//</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordtype">int</span> epoch = 1;                                          <span class="comment">// Установить номер эпохи первый</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">double</span> error;                                           <span class="comment">// Ошибка в эпохе</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        error = 0;                                          <span class="comment">// Сбросить величину ошибки</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; X.<a class="code" href="classia_matrix.html#a660da4bfc4021cc0770fcc11da9d972e">numberOfVectors</a>(); i++) {     <span class="comment">// Перебор элементов обучающего множества</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <a class="code" href="classia_network.html#a04287239300c639035ccd36178feeaad">ForwardPropogation</a>(X[i], <a class="code" href="classia_network.html#a81f89da91c4331aff0a5388e81f61592ab3784b2f47eb353064834d258dc91d76">Gaussian</a>);             <span class="comment">// Прямое распространение сигнала</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <a class="code" href="classia_network.html#a634697f9880299b612e809d14b1b0eea">BackwardPropogation</a>(Y[i], &amp;error);              <span class="comment">// Обратное распространение ошибки</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <a class="code" href="classia_network.html#a420e5b50a78381732682bb0187ed8c32">UpdateWeights</a>(alpha);                           <span class="comment">// Обновление весовых коэффициентов</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        }</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Epoch:\t&quot;</span> &lt;&lt; epoch &lt;&lt; <span class="stringliteral">&quot;\t\tError:\t&quot;</span> &lt;&lt; error &lt;&lt; endl;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        epoch++;                                            <span class="comment">// Увеличить номер эпохи</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    } <span class="keywordflow">while</span> (epoch &lt;= epochs &amp;&amp; error &gt; eps);               <span class="comment">// Выполнять пока не закончатся эпохи или ошибка не достигнет допостимого значенияx</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;}</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="classia_network.html#a2d3e0614d5a2ddaa095d1c91c4ae4042">  151</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classia_network.html#a2d3e0614d5a2ddaa095d1c91c4ae4042">iaNetwork::InitWeigths</a>(<a class="code" href="classia_matrix.html">iaMatrix</a> newWeights) {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> l = 0; l &lt; this-&gt;<a class="code" href="classia_network.html#ac74fb9841f29cd367bd13fb66fcfb081">layersNumber</a>; l++) {                          <span class="comment">// Перебор слоев</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; this-&gt;<a class="code" href="classia_network.html#ac18ca359ad1c64561ac28db11c8b3fb6">weights</a>[l].<a class="code" href="classia_matrix.html#a660da4bfc4021cc0770fcc11da9d972e">numberOfVectors</a>(); i++) {      <span class="comment">// Перебор нейронов</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; this-&gt;<a class="code" href="classia_network.html#ac18ca359ad1c64561ac28db11c8b3fb6">weights</a>[l].<a class="code" href="classia_matrix.html#a1ce3049b06370bd3fc1dcc0d512d592f">sizeOfVectors</a>(); j++) {    <span class="comment">// Перебор входов в нейрон</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                this-&gt;<a class="code" href="classia_network.html#ac18ca359ad1c64561ac28db11c8b3fb6">weights</a>[l][i][j] = newWeights[l][j];                  <span class="comment">// Обновление весового коэффициента</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        }</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    }</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclassia_matrix_html_a660da4bfc4021cc0770fcc11da9d972e"><div class="ttname"><a href="classia_matrix.html#a660da4bfc4021cc0770fcc11da9d972e">iaMatrix::numberOfVectors</a></div><div class="ttdeci">int numberOfVectors()</div><div class="ttdef"><b>Definition:</b> <a href="ia_matrix_8cpp_source.html#l00043">iaMatrix.cpp:43</a></div></div>
+<div class="ttc" id="aclassia_network_html_a420e5b50a78381732682bb0187ed8c32"><div class="ttname"><a href="classia_network.html#a420e5b50a78381732682bb0187ed8c32">iaNetwork::UpdateWeights</a></div><div class="ttdeci">void UpdateWeights(double alpha)</div><div class="ttdef"><b>Definition:</b> <a href="ia_network_8cpp_source.html#l00126">iaNetwork.cpp:126</a></div></div>
+<div class="ttc" id="aclassia_network_html_a81f89da91c4331aff0a5388e81f61592"><div class="ttname"><a href="classia_network.html#a81f89da91c4331aff0a5388e81f61592">iaNetwork::activation</a></div><div class="ttdeci">activation</div><div class="ttdef"><b>Definition:</b> <a href="ia_network_8h_source.html#l00030">iaNetwork.h:30</a></div></div>
+<div class="ttc" id="aclassia_matrix_html_a1ce3049b06370bd3fc1dcc0d512d592f"><div class="ttname"><a href="classia_matrix.html#a1ce3049b06370bd3fc1dcc0d512d592f">iaMatrix::sizeOfVectors</a></div><div class="ttdeci">int sizeOfVectors()</div><div class="ttdef"><b>Definition:</b> <a href="ia_matrix_8cpp_source.html#l00047">iaMatrix.cpp:47</a></div></div>
+<div class="ttc" id="aclassia_network_html_ac74fb9841f29cd367bd13fb66fcfb081"><div class="ttname"><a href="classia_network.html#ac74fb9841f29cd367bd13fb66fcfb081">iaNetwork::layersNumber</a></div><div class="ttdeci">int layersNumber</div><div class="ttdef"><b>Definition:</b> <a href="ia_network_8h_source.html#l00040">iaNetwork.h:40</a></div></div>
+<div class="ttc" id="aclassia_network_html_a81f89da91c4331aff0a5388e81f61592a54a1ea1b0aefb67a9be66d7bcf3d53a7"><div class="ttname"><a href="classia_network.html#a81f89da91c4331aff0a5388e81f61592a54a1ea1b0aefb67a9be66d7bcf3d53a7">iaNetwork::ReLu</a></div><div class="ttdeci">@ ReLu</div><div class="ttdef"><b>Definition:</b> <a href="ia_network_8h_source.html#l00034">iaNetwork.h:34</a></div></div>
+<div class="ttc" id="aclassia_network_html_a04287239300c639035ccd36178feeaad"><div class="ttname"><a href="classia_network.html#a04287239300c639035ccd36178feeaad">iaNetwork::ForwardPropogation</a></div><div class="ttdeci">iaVector ForwardPropogation(iaVector inputVector, activation foncActiv)</div><div class="ttdef"><b>Definition:</b> <a href="ia_network_8cpp_source.html#l00052">iaNetwork.cpp:52</a></div></div>
+<div class="ttc" id="aclassia_network_html_a910724de76aa40461b3de8dd6bb8dc4e"><div class="ttname"><a href="classia_network.html#a910724de76aa40461b3de8dd6bb8dc4e">iaNetwork::~iaNetwork</a></div><div class="ttdeci">~iaNetwork()</div><div class="ttdef"><b>Definition:</b> <a href="ia_network_8cpp_source.html#l00048">iaNetwork.cpp:48</a></div></div>
+<div class="ttc" id="aclassia_matrix_html"><div class="ttname"><a href="classia_matrix.html">iaMatrix</a></div><div class="ttdef"><b>Definition:</b> <a href="ia_matrix_8h_source.html#l00018">iaMatrix.h:18</a></div></div>
+<div class="ttc" id="aclassia_network_html_a940cb46a6064b4684d7f80b81a6acf92"><div class="ttname"><a href="classia_network.html#a940cb46a6064b4684d7f80b81a6acf92">iaNetwork::deltas</a></div><div class="ttdeci">iaVector * deltas</div><div class="ttdef"><b>Definition:</b> <a href="ia_network_8h_source.html#l00051">iaNetwork.h:51</a></div></div>
+<div class="ttc" id="aclassia_network_html"><div class="ttname"><a href="classia_network.html">iaNetwork</a></div><div class="ttdef"><b>Definition:</b> <a href="ia_network_8h_source.html#l00028">iaNetwork.h:28</a></div></div>
+<div class="ttc" id="astructia_network_1_1ia_layer_html_a310466db01d0e22406c4b63b95f70e99"><div class="ttname"><a href="structia_network_1_1ia_layer.html#a310466db01d0e22406c4b63b95f70e99">iaNetwork::iaLayer::x</a></div><div class="ttdeci">iaVector x</div><div class="ttdef"><b>Definition:</b> <a href="ia_network_8h_source.html#l00044">iaNetwork.h:44</a></div></div>
+<div class="ttc" id="aclassia_vector_html_a82d20ecd1daa52dc1641bef8a39f84a9"><div class="ttname"><a href="classia_vector.html#a82d20ecd1daa52dc1641bef8a39f84a9">iaVector::sizeOfVector</a></div><div class="ttdeci">int sizeOfVector()</div><div class="ttdef"><b>Definition:</b> <a href="ia_vector_8cpp_source.html#l00030">iaVector.cpp:30</a></div></div>
+<div class="ttc" id="aclassia_network_html_a81f89da91c4331aff0a5388e81f61592ab3784b2f47eb353064834d258dc91d76"><div class="ttname"><a href="classia_network.html#a81f89da91c4331aff0a5388e81f61592ab3784b2f47eb353064834d258dc91d76">iaNetwork::Gaussian</a></div><div class="ttdeci">@ Gaussian</div><div class="ttdef"><b>Definition:</b> <a href="ia_network_8h_source.html#l00035">iaNetwork.h:35</a></div></div>
+<div class="ttc" id="aclassia_network_html_a81f89da91c4331aff0a5388e81f61592a860db4f245c33e84faf1d955305c14e7"><div class="ttname"><a href="classia_network.html#a81f89da91c4331aff0a5388e81f61592a860db4f245c33e84faf1d955305c14e7">iaNetwork::Sinc</a></div><div class="ttdeci">@ Sinc</div><div class="ttdef"><b>Definition:</b> <a href="ia_network_8h_source.html#l00037">iaNetwork.h:37</a></div></div>
+<div class="ttc" id="aclassia_network_html_a2d3e0614d5a2ddaa095d1c91c4ae4042"><div class="ttname"><a href="classia_network.html#a2d3e0614d5a2ddaa095d1c91c4ae4042">iaNetwork::InitWeigths</a></div><div class="ttdeci">void InitWeigths(iaMatrix newWeights)</div><div class="ttdef"><b>Definition:</b> <a href="ia_network_8cpp_source.html#l00151">iaNetwork.cpp:151</a></div></div>
+<div class="ttc" id="aclassia_network_html_a634697f9880299b612e809d14b1b0eea"><div class="ttname"><a href="classia_network.html#a634697f9880299b612e809d14b1b0eea">iaNetwork::BackwardPropogation</a></div><div class="ttdeci">void BackwardPropogation(iaVector outputVector, double *error)</div><div class="ttdef"><b>Definition:</b> <a href="ia_network_8cpp_source.html#l00108">iaNetwork.cpp:108</a></div></div>
+<div class="ttc" id="aia_network_8h_html"><div class="ttname"><a href="ia_network_8h.html">iaNetwork.h</a></div></div>
+<div class="ttc" id="astructia_network_1_1ia_layer_html_a2aae1c81923041458bdd7d8dbe668108"><div class="ttname"><a href="structia_network_1_1ia_layer.html#a2aae1c81923041458bdd7d8dbe668108">iaNetwork::iaLayer::fD</a></div><div class="ttdeci">iaVector fD</div><div class="ttdef"><b>Definition:</b> <a href="ia_network_8h_source.html#l00046">iaNetwork.h:46</a></div></div>
+<div class="ttc" id="aclassia_network_html_a24897f9a555a7f10eecb79d610a99bf1"><div class="ttname"><a href="classia_network.html#a24897f9a555a7f10eecb79d610a99bf1">iaNetwork::layers</a></div><div class="ttdeci">iaLayer * layers</div><div class="ttdef"><b>Definition:</b> <a href="ia_network_8h_source.html#l00050">iaNetwork.h:50</a></div></div>
+<div class="ttc" id="aclassia_network_html_a411665c95fe0be2fa526c30eb90462ef"><div class="ttname"><a href="classia_network.html#a411665c95fe0be2fa526c30eb90462ef">iaNetwork::Train</a></div><div class="ttdeci">void Train(iaMatrix X, iaMatrix Y, double alpha, double eps, int epochs)</div><div class="ttdef"><b>Definition:</b> <a href="ia_network_8cpp_source.html#l00136">iaNetwork.cpp:136</a></div></div>
+<div class="ttc" id="aclassia_network_html_ac18ca359ad1c64561ac28db11c8b3fb6"><div class="ttname"><a href="classia_network.html#ac18ca359ad1c64561ac28db11c8b3fb6">iaNetwork::weights</a></div><div class="ttdeci">iaMatrix * weights</div><div class="ttdef"><b>Definition:</b> <a href="ia_network_8h_source.html#l00049">iaNetwork.h:49</a></div></div>
+<div class="ttc" id="astructia_network_1_1ia_layer_html"><div class="ttname"><a href="structia_network_1_1ia_layer.html">iaNetwork::iaLayer</a></div><div class="ttdef"><b>Definition:</b> <a href="ia_network_8h_source.html#l00042">iaNetwork.h:42</a></div></div>
+<div class="ttc" id="aclassia_network_html_a81f89da91c4331aff0a5388e81f61592a84928249b44745e58420845215c1c4df"><div class="ttname"><a href="classia_network.html#a81f89da91c4331aff0a5388e81f61592a84928249b44745e58420845215c1c4df">iaNetwork::Sigmoid</a></div><div class="ttdeci">@ Sigmoid</div><div class="ttdef"><b>Definition:</b> <a href="ia_network_8h_source.html#l00033">iaNetwork.h:33</a></div></div>
+<div class="ttc" id="aclassia_network_html_a11d94ca89a6bf4e92696cde2899f80fb"><div class="ttname"><a href="classia_network.html#a11d94ca89a6bf4e92696cde2899f80fb">iaNetwork::iaNetwork</a></div><div class="ttdeci">iaNetwork()</div><div class="ttdef"><b>Definition:</b> <a href="ia_network_8cpp_source.html#l00005">iaNetwork.cpp:5</a></div></div>
+<div class="ttc" id="aclassia_network_html_a81f89da91c4331aff0a5388e81f61592ab77f370239b7574a3692c561c52fa9e6"><div class="ttname"><a href="classia_network.html#a81f89da91c4331aff0a5388e81f61592ab77f370239b7574a3692c561c52fa9e6">iaNetwork::Arctangent</a></div><div class="ttdeci">@ Arctangent</div><div class="ttdef"><b>Definition:</b> <a href="ia_network_8h_source.html#l00032">iaNetwork.h:32</a></div></div>
+<div class="ttc" id="astructia_network_1_1ia_layer_html_a338a6d8cb5fbbaf6b3c93503bd19833e"><div class="ttname"><a href="structia_network_1_1ia_layer.html#a338a6d8cb5fbbaf6b3c93503bd19833e">iaNetwork::iaLayer::z</a></div><div class="ttdeci">iaVector z</div><div class="ttdef"><b>Definition:</b> <a href="ia_network_8h_source.html#l00045">iaNetwork.h:45</a></div></div>
+<div class="ttc" id="astructnet_setings_html"><div class="ttname"><a href="structnet_setings.html">netSetings</a></div><div class="ttdef"><b>Definition:</b> <a href="ia_network_8h_source.html#l00011">iaNetwork.h:11</a></div></div>
+<div class="ttc" id="aclassia_network_html_a81f89da91c4331aff0a5388e81f61592aa810982671b7fe910f9b073394fdefcd"><div class="ttname"><a href="classia_network.html#a81f89da91c4331aff0a5388e81f61592aa810982671b7fe910f9b073394fdefcd">iaNetwork::Sin</a></div><div class="ttdeci">@ Sin</div><div class="ttdef"><b>Definition:</b> <a href="ia_network_8h_source.html#l00036">iaNetwork.h:36</a></div></div>
+<div class="ttc" id="aclassia_vector_html"><div class="ttname"><a href="classia_vector.html">iaVector</a></div><div class="ttdef"><b>Definition:</b> <a href="ia_vector_8h_source.html#l00017">iaVector.h:17</a></div></div>
+<div class="ttc" id="aclassia_network_html_a81f89da91c4331aff0a5388e81f61592a3f9486d01e74209984645c9f5f8e3271"><div class="ttname"><a href="classia_network.html#a81f89da91c4331aff0a5388e81f61592a3f9486d01e74209984645c9f5f8e3271">iaNetwork::Hyperbolic_Tangent</a></div><div class="ttdeci">@ Hyperbolic_Tangent</div><div class="ttdef"><b>Definition:</b> <a href="ia_network_8h_source.html#l00031">iaNetwork.h:31</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d522931ffa1371640980b621734a4381.html">Users</a></li><li class="navelem"><a class="el" href="dir_c518a98d999d594563d1bc525a5c28d2.html">aleksandri</a></li><li class="navelem"><a class="el" href="dir_fcfaadc438167a61192c5f6e59afe8b3.html">Documents</a></li><li class="navelem"><a class="el" href="dir_dfeca2bae09bc9794fd48bd15e9742e3.html">GitHub</a></li><li class="navelem"><a class="el" href="dir_7ffed766a934393a7096b3cd6fe1ecd5.html">NeuroNet_education_</a></li><li class="navelem"><a class="el" href="ia_network_8cpp.html">iaNetwork.cpp</a></li>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

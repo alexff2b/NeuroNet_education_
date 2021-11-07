@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+  <compound refid="structia_network_1_1ia_layer" kind="struct"><name>iaNetwork::iaLayer</name>
+    <member refid="structia_network_1_1ia_layer_1a310466db01d0e22406c4b63b95f70e99" kind="variable"><name>x</name></member>
+    <member refid="structia_network_1_1ia_layer_1a338a6d8cb5fbbaf6b3c93503bd19833e" kind="variable"><name>z</name></member>
+    <member refid="structia_network_1_1ia_layer_1a2aae1c81923041458bdd7d8dbe668108" kind="variable"><name>fD</name></member>
+  </compound>
+  <compound refid="classia_matrix" kind="class"><name>iaMatrix</name>
+    <member refid="classia_matrix_1affef3ff3b046c7965d53e7e53729c10a" kind="variable"><name>vector</name></member>
+    <member refid="classia_matrix_1a9cffa084c54d4098a88ed3c6e630f3c4" kind="variable"><name>n</name></member>
+    <member refid="classia_matrix_1a47828d5b0ab43dc9e95c3ca2f9017b48" kind="variable"><name>m</name></member>
+    <member refid="classia_matrix_1a6a0e8fbf747215a6e9c52e63c9e3c407" kind="function"><name>iaMatrix</name></member>
+    <member refid="classia_matrix_1af23c66f13a9df6307baba5384c8e9cab" kind="function"><name>iaMatrix</name></member>
+    <member refid="classia_matrix_1a29db76538dc056d42a1fca8c1bc8986f" kind="function"><name>iaMatrix</name></member>
+    <member refid="classia_matrix_1a460f6afb85c4f0972400a5c57d1fca03" kind="function"><name>iaMatrix</name></member>
+    <member refid="classia_matrix_1ad4473bcda9fa8c35916a3a12526df103" kind="function"><name>iaMatrix</name></member>
+    <member refid="classia_matrix_1abd5176a1f0b62740b7df7d99250b6bbe" kind="function"><name>~iaMatrix</name></member>
+    <member refid="classia_matrix_1a660da4bfc4021cc0770fcc11da9d972e" kind="function"><name>numberOfVectors</name></member>
+    <member refid="classia_matrix_1a1ce3049b06370bd3fc1dcc0d512d592f" kind="function"><name>sizeOfVectors</name></member>
+    <member refid="classia_matrix_1a81caacb64f7ceeda369f5e6da522facc" kind="function"><name>printMatrix</name></member>
+    <member refid="classia_matrix_1aaa5b5e9f1e3b82cef0c0b156a3a7eb78" kind="function"><name>operator[]</name></member>
+    <member refid="classia_matrix_1a0a7700b29d039dde125c64867c1704a4" kind="function"><name>operator&amp;</name></member>
+  </compound>
+  <compound refid="classia_network" kind="class"><name>iaNetwork</name>
+    <member refid="classia_network_1a81f89da91c4331aff0a5388e81f61592" kind="enum"><name>activation</name></member>
+    <member refid="classia_network_1a81f89da91c4331aff0a5388e81f61592a3f9486d01e74209984645c9f5f8e3271" kind="enumvalue"><name>Hyperbolic_Tangent</name></member>
+    <member refid="classia_network_1a81f89da91c4331aff0a5388e81f61592ab77f370239b7574a3692c561c52fa9e6" kind="enumvalue"><name>Arctangent</name></member>
+    <member refid="classia_network_1a81f89da91c4331aff0a5388e81f61592a84928249b44745e58420845215c1c4df" kind="enumvalue"><name>Sigmoid</name></member>
+    <member refid="classia_network_1a81f89da91c4331aff0a5388e81f61592a54a1ea1b0aefb67a9be66d7bcf3d53a7" kind="enumvalue"><name>ReLu</name></member>
+    <member refid="classia_network_1a81f89da91c4331aff0a5388e81f61592ab3784b2f47eb353064834d258dc91d76" kind="enumvalue"><name>Gaussian</name></member>
+    <member refid="classia_network_1a81f89da91c4331aff0a5388e81f61592aa810982671b7fe910f9b073394fdefcd" kind="enumvalue"><name>Sin</name></member>
+    <member refid="classia_network_1a81f89da91c4331aff0a5388e81f61592a860db4f245c33e84faf1d955305c14e7" kind="enumvalue"><name>Sinc</name></member>
+    <member refid="classia_network_1ac74fb9841f29cd367bd13fb66fcfb081" kind="variable"><name>layersNumber</name></member>
+    <member refid="classia_network_1ac18ca359ad1c64561ac28db11c8b3fb6" kind="variable"><name>weights</name></member>
+    <member refid="classia_network_1a24897f9a555a7f10eecb79d610a99bf1" kind="variable"><name>layers</name></member>
+    <member refid="classia_network_1a940cb46a6064b4684d7f80b81a6acf92" kind="variable"><name>deltas</name></member>
+    <member refid="classia_network_1a11d94ca89a6bf4e92696cde2899f80fb" kind="function"><name>iaNetwork</name></member>
+    <member refid="classia_network_1adbf695ade31b10e572676924d6360ed8" kind="function"><name>iaNetwork</name></member>
+    <member refid="classia_network_1a0684bcd9d328e7b9519f10a0775f399c" kind="function"><name>iaNetwork</name></member>
+    <member refid="classia_network_1a078f93da3cca25c0407075a47afc639e" kind="function"><name>iaNetwork</name></member>
+    <member refid="classia_network_1a910724de76aa40461b3de8dd6bb8dc4e" kind="function"><name>~iaNetwork</name></member>
+    <member refid="classia_network_1a04287239300c639035ccd36178feeaad" kind="function"><name>ForwardPropogation</name></member>
+    <member refid="classia_network_1a634697f9880299b612e809d14b1b0eea" kind="function"><name>BackwardPropogation</name></member>
+    <member refid="classia_network_1a420e5b50a78381732682bb0187ed8c32" kind="function"><name>UpdateWeights</name></member>
+    <member refid="classia_network_1a411665c95fe0be2fa526c30eb90462ef" kind="function"><name>Train</name></member>
+    <member refid="classia_network_1a2d3e0614d5a2ddaa095d1c91c4ae4042" kind="function"><name>InitWeigths</name></member>
+  </compound>
+  <compound refid="classia_vector" kind="class"><name>iaVector</name>
+    <member refid="classia_vector_1ae4bfe27207eb576f8b0e8505a508e39c" kind="variable"><name>m</name></member>
+    <member refid="classia_vector_1ad73fc975a69fb1c91884388eb5ba648e" kind="variable"><name>value</name></member>
+    <member refid="classia_vector_1aeb696e20231b42a4131b137197d744ee" kind="function"><name>iaVector</name></member>
+    <member refid="classia_vector_1a790c503ace60e30fc7d1a81345118477" kind="function"><name>iaVector</name></member>
+    <member refid="classia_vector_1a268d4ca5b1f07e60ccb88fe5ab85057b" kind="function"><name>iaVector</name></member>
+    <member refid="classia_vector_1acb1dcdc5070c8e8b0fff6a3f19b87b90" kind="function"><name>iaVector</name></member>
+    <member refid="classia_vector_1a5f8915a69a7b1460f1a29e5a4e748df3" kind="function"><name>~iaVector</name></member>
+    <member refid="classia_vector_1a82d20ecd1daa52dc1641bef8a39f84a9" kind="function"><name>sizeOfVector</name></member>
+    <member refid="classia_vector_1a0ff4af3e76a789483fbd50cd49eda6a5" kind="function"><name>printVector</name></member>
+    <member refid="classia_vector_1a67dab91c20b683b426841bab9b77e4f6" kind="function"><name>operator[]</name></member>
+    <member refid="classia_vector_1a52cd595f0bc9b19d43abc47cc2da2ce5" kind="function"><name>operator&amp;</name></member>
+  </compound>
+  <compound refid="structnet_setings" kind="struct"><name>netSetings</name>
+    <member refid="structnet_setings_1ac5cdb7e1f475cf175f960cbf42c99ef0" kind="variable"><name>numberOfLayers</name></member>
+    <member refid="structnet_setings_1a8dc3a8abd51839a3300bf775c668fd5d" kind="variable"><name>sizes</name></member>
+    <member refid="structnet_setings_1a4c8de026e210cbb38586082d714a8995" kind="function"><name>netSetings</name></member>
+    <member refid="structnet_setings_1a34439a66d62ad3ce15cc4dc167b3304b" kind="function"><name>netSetings</name></member>
+    <member refid="structnet_setings_1aa52e19d4c7029439b5b863df74ca68ee" kind="function"><name>netSetings</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="_debug_2neuro_8vcxproj_8_file_list_absolute_8txt" kind="file"><name>neuro.vcxproj.FileListAbsolute.txt</name>
+  </compound>
+  <compound refid="x64_2_debug_2neuro_8vcxproj_8_file_list_absolute_8txt" kind="file"><name>neuro.vcxproj.FileListAbsolute.txt</name>
+  </compound>
+  <compound refid="ia_matrix_8cpp" kind="file"><name>iaMatrix.cpp</name>
+  </compound>
+  <compound refid="ia_matrix_8h" kind="file"><name>iaMatrix.h</name>
+  </compound>
+  <compound refid="ia_network_8cpp" kind="file"><name>iaNetwork.cpp</name>
+  </compound>
+  <compound refid="ia_network_8h" kind="file"><name>iaNetwork.h</name>
+  </compound>
+  <compound refid="ia_vector_8cpp" kind="file"><name>iaVector.cpp</name>
+  </compound>
+  <compound refid="ia_vector_8h" kind="file"><name>iaVector.h</name>
+  </compound>
+  <compound refid="neuro_8cpp" kind="file"><name>neuro.cpp</name>
+    <member refid="neuro_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="setings_8txt" kind="file"><name>setings.txt</name>
+  </compound>
+  <compound refid="tests_8cpp" kind="file"><name>tests.cpp</name>
+    <member refid="tests_8cpp_1a3a95f4fbd646c7c5affa7154b0afabf8" kind="function"><name>iaVectorTest</name></member>
+    <member refid="tests_8cpp_1a3a5b8de02256782aba8a3761e26e44d0" kind="function"><name>iaMatrixTest</name></member>
+    <member refid="tests_8cpp_1a126908a899157592c5fbd15be2655a74" kind="function"><name>iaNetworkTest</name></member>
+  </compound>
+  <compound refid="tests_8h" kind="file"><name>tests.h</name>
+    <member refid="tests_8h_1a3a95f4fbd646c7c5affa7154b0afabf8" kind="function"><name>iaVectorTest</name></member>
+    <member refid="tests_8h_1a3a5b8de02256782aba8a3761e26e44d0" kind="function"><name>iaMatrixTest</name></member>
+    <member refid="tests_8h_1a126908a899157592c5fbd15be2655a74" kind="function"><name>iaNetworkTest</name></member>
+  </compound>
+  <compound refid="dir_c518a98d999d594563d1bc525a5c28d2" kind="dir"><name>C:/Users/aleksandri</name>
+  </compound>
+  <compound refid="dir_1d5f4fcf8425800d9eeec2e4f62e11de" kind="dir"><name>C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/x64/Debug</name>
+  </compound>
+  <compound refid="dir_337abe71dafdaef49280c303c12c7dce" kind="dir"><name>C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/Debug</name>
+  </compound>
+  <compound refid="dir_fcfaadc438167a61192c5f6e59afe8b3" kind="dir"><name>C:/Users/aleksandri/Documents</name>
+  </compound>
+  <compound refid="dir_dfeca2bae09bc9794fd48bd15e9742e3" kind="dir"><name>C:/Users/aleksandri/Documents/GitHub</name>
+  </compound>
+  <compound refid="dir_7ffed766a934393a7096b3cd6fe1ecd5" kind="dir"><name>C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_</name>
+  </compound>
+  <compound refid="dir_d522931ffa1371640980b621734a4381" kind="dir"><name>C:/Users</name>
+  </compound>
+  <compound refid="dir_5747902acbdd4992c62852b85aa380b2" kind="dir"><name>C:/Users/aleksandri/Documents/GitHub/NeuroNet_education_/x64</name>
+  </compound>
+</doxygenindex>
